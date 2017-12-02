@@ -2,5 +2,6 @@
 set -e
 
 new_script=$(mktemp)
-cp update-phase2.sh $new_script
-$new_script
+cp phase2-update.sh $new_script
+chmod u+x $new_script
+( $new_script )
