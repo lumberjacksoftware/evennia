@@ -34,7 +34,7 @@ then
 fi
 
 echo Checking for existance of branch lumberjack linked to origin/lumberjack...
-if [ 1 -ne $(git branch -vv | grep -c -e "[[:blank:]]lumberjack[[:blank:]].*[[:blank:]]\[origin\/lumberjack\][[:blank:]]") ]
+if [ 1 -ne $(git branch -vv | grep -c -e "[[:blank:]]lumberjack[[:blank:]].*[[:blank:]]\[origin\/lumberjack\\(:.*\)\?\][[:blank:]]") ]
 then
     echo lumberjack branch from origin/lumberjack doesn''t exist
     echo Use command:
